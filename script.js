@@ -1,27 +1,27 @@
-let a = new Promise(resolve, reject) => {
+let a = new Promise(resolve) => {
 	setTimeout(() => {
-		resolve("a")
-	},1000)
+		resolve("a");
+	}, 4000)
 }
 
-let b = new Promise(resolve, reject) => {
+let b = new Promise(resolve) => {
 	setTimeout(() => {
 		resolve("b")
 	}, 2000)
 }
 
-let c = new Promise(resolve, reject) => {
+let c = new Promise(resolve) => {
 	setTimeout(() => {
 		resolve("c")
-	},3000)
+	}, 3000)
 }
 
-let d = new Promise(resolve, reject) => {
+let d = new Promise(resolve) => {
 	setTimeout(() => {
 		resolve("d");
-	},4000)
+	},1000)
 }
-let e = new Promise(resolve, reject) => {
+let e = new Promise(resolve) => {
 	setTimeout(() => {
 		resolve("e");
 	},5000)
